@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumen HTML - SMA Negeri 2 Playen</title>
+    <style>
+        /* Reset dasar */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        /* Styling dari user */
+        body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    color: #1a5f7a;
+}
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul Interaktif: Geguritan Bahasa Jawa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-dark: #1a1200;
+            --primary-brown: #3c2a1e;
+            --secondary-brown: #5c4033;
+            --accent-gold: #d4af37;
+            --light-beige: #f5f1e6;
+            --medium-beige: #e8dfca;
+            --dark-text: #2c1810;
+            --shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            --border-radius: 10px;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', 'Times New Roman', serif;
+        }
+        
+        body {
+            background-color: var(--light-beige);
+            color: var(--dark-text);
+            line-height: 1.7;
+            padding-bottom: 40px;
+            background-image: linear-gradient(to bottom, var(--light-beige) 0%, #f9f5eb 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-brown) 100%);
+            color: var(--light-beige);
+            padding: 30px 0;
+            text-align: center;
+            border-bottom: 5px solid var(--accent-gold);
+            margin-bottom: 35px;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23d4af37' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.1;
+        }
+        
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 1;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .principles-bar {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .principle-card {
+            background: linear-gradient(145deg, #ffffff, #f0ebe0);
+            border-radius: var(--border-radius);
+            padding: 25px;
+            width: 320px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            cursor: pointer;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .principle-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+        }
+        
+        .principle-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            border-color: var(--accent-gold);
+        }
+        
+        .berkesadaran::before {
+            background: linear-gradient(90deg, #3c2a1e, #6d4c41);
+        }
+        
+        .bermakna::before {
+            background: linear-gradient(90deg, #5c4033, #8b7355);
+        }
+        
+        .menggembirakan::before {
+            background: linear-gradient(90deg, #d4af37, #ffd700);
+        }
+        
+        .principle-icon {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: var(--secondary-brown);
+        }
+        
+        .principle-card h3 {
+            margin-bottom: 15px;
+            color: var(--primary-brown);
+            font-size: 1.5rem;
+        }
+        
+        .section {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            margin-bottom: 35px;
+            box-shadow: var(--shadow);
+            border-left: 6px solid var(--accent-gold);
+            border-top: 1px solid #e0d6c2;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, transparent 50%, rgba(212, 175, 55, 0.05) 50%);
+            z-index: 0;
+        }
+        
+        .section h2 {
+            color: var(--primary-dark);
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--medium-beige);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .section h2 i {
+            color: var(--accent-gold);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        th, td {
+            padding: 15px 18px;
+            text-align: left;
+            border-bottom: 1px solid #e8e2d5;
+        }
+        
+        th {
+            background-color: var(--primary-dark);
+            color: var(--light-beige);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+        
+        tr {
+            transition: var(--transition);
+        }
+        
+        tr:hover {
+            background-color: #f9f5eb;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #fcf9f2;
+        }
+        
+        tr:nth-child(even):hover {
+            background-color: #f9f5eb;
+        }
+        
+        .activity-timeline {
+            position: relative;
+            margin: 30px 0;
+            padding-left: 40px;
+        }
+        
+        .activity-timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, var(--primary-brown), var(--accent-gold));
+            border-radius: 10px;
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(145deg, #ffffff, #f9f5eb);
+            border-radius: var(--border-radius);
+            border-left: 5px solid var(--secondary-brown);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+        
+        .timeline-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -43px;
+            top: 25px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: var(--accent-gold);
+            border: 4px solid var(--primary-dark);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+            z-index: 2;
+        }
+        
+        .timeline-time {
+            font-weight: bold;
+            color: var(--primary-brown);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.1rem;
+        }
+        
+        .interactive-element {
+            background: linear-gradient(145deg, #f9f5eb, #f5f1e6);
+            border-radius: var(--border-radius);
+            padding: 25px;
+            margin: 25px 0;
+            border-left: 5px solid var(--primary-brown);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .interactive-element::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 80px;
+            height: 80px;
+            background-color: rgba(212, 175, 55, 0.08);
+            border-radius: 50%;
+        }
+        
+        .interactive-element h4 {
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        button {
+            background: linear-gradient(145deg, var(--primary-brown), var(--primary-dark));
+            color: var(--light-beige);
+            border: none;
+            padding: 14px 24px;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+            z-index: -1;
+        }
+        
+        button:hover {
+            background: linear-gradient(145deg, var(--secondary-brown), var(--primary-brown));
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+        
+        button:hover::before {
+            left: 100%;
+        }
+        
+        .assessment-criteria {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 25px 0;
+        }
+        
+        .criteria-card {
+            background: linear-gradient(145deg, #ffffff, #f9f5eb);
+            border-radius: var(--border-radius);
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-top: 4px solid var(--accent-gold);
+            transition: var(--transition);
+            height: 100%;
+        }
+        
+        .criteria-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .criteria-card h4 {
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .hidden-content {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--accent-gold);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .toggle-btn {
+            background: linear-gradient(145deg, var(--medium-beige), #e0d6c2);
+            color: var(--primary-brown);
+            padding: 10px 18px;
+            font-size: 0.95rem;
+            margin-top: 15px;
+            border: 1px solid #d4c9b1;
+        }
+        
+        .toggle-btn:hover {
+            background: linear-gradient(145deg, #e0d6c2, var(--medium-beige));
+            color: var(--primary-dark);
+        }
+        
+        .quote {
+            font-style: italic;
+            padding: 25px;
+            background: linear-gradient(145deg, #f5f1e6, #f0ebe0);
+            border-radius: var(--border-radius);
+            margin: 25px 0;
+            border-left: 5px solid var(--secondary-brown);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+        
+        .quote::before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 4rem;
+            color: rgba(92, 64, 51, 0.1);
+            font-family: serif;
+            line-height: 1;
+        }
+        
+        .quote p {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .quote-author {
+            text-align: right;
+            font-weight: 600;
+            color: var(--primary-brown);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .geguritan-example {
+            background: linear-gradient(145deg, #fff9e6, #fff5d6);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            margin: 25px 0;
+            border-left: 5px solid var(--accent-gold);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .geguritan-example::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%235c4033' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+        
+        .geguritan-example h4 {
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .geguritan-example p {
+            position: relative;
+            z-index: 1;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 25px;
+            color: var(--primary-brown);
+            border-top: 1px solid #e0d6c2;
+            background-color: #f9f5eb;
+        }
+        
+        .progress-container {
+            background-color: #e8e2d5;
+            border-radius: 20px;
+            height: 12px;
+            margin: 25px 0;
+            overflow: hidden;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary-brown), var(--accent-gold));
+            width: 0%;
+            transition: width 0.5s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .progress-bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: shimmer 2s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        
+        .progress-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        
+        .progress-info span {
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+        
+        .progress-info span:first-child {
+            font-size: 1.1rem;
+        }
+        
+        textarea, select {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: var(--border-radius);
+            border: 1px solid #d4c9b1;
+            background-color: white;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        
+        textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .principles-bar {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .principle-card {
+                width: 100%;
+                max-width: 400px;
+            }
+            
+            .assessment-criteria {
+                grid-template-columns: 1fr;
+            }
+            
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+            
+            header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+        }
+        
+        /* Animasi untuk elemen yang muncul */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .section, .principle-card, .interactive-element {
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        .section:nth-child(2) { animation-delay: 0.1s; }
+        .section:nth-child(3) { animation-delay: 0.2s; }
+        .section:nth-child(4) { animation-delay: 0.3s; }
+        .section:nth-child(5) { animation-delay: 0.4s; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-scroll"></i> Modul Interaktif: Geguritan Bahasa Jawa</h1>
+            <p>Penerapan Prinsip Berkesadaran, Bermakna, dan Menggembirakan dalam Pembelajaran</p>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="progress-info">
+                <span>Progress Belajar: <span id="progressPercent">0%</span></span>
+                <span><i class="fas fa-graduation-cap"></i> SMA Negeri 2 Playen</span>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="principles-bar">
+            <div class="principle-card berkesadaran" onclick="showPrincipleInfo('berkesadaran')">
+                <div class="principle-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Berkesadaran</h3>
+                <p>Mengembangkan kesadaran penuh terhadap proses belajar dan kekayaan budaya Jawa</p>
+            </div>
+            
+            <div class="principle-card bermakna" onclick="showPrincipleInfo('bermakna')">
+                <div class="principle-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Bermakna</h3>
+                <p>Memberikan makna dan relevansi pembelajaran dengan kehidupan sehari-hari</p>
+            </div>
+            
+            <div class="principle-card menggembirakan" onclick="showPrincipleInfo('menggembirakan')">
+                <div class="principle-icon">
+                    <i class="fas fa-laugh-beam"></i>
+                </div>
+                <h3>Menggembirakan</h3>
+                <p>Menciptakan suasana belajar yang menyenangkan dan memotivasi</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-info-circle"></i> Informasi Umum</h2>
+            <table>
+                <tr>
+                    <th>Komponen</th>
+                    <th>Deskripsi</th>
+                </tr>
+                <tr>
+                    <td><strong>Sekolah</strong></td>
+                    <td>SMA Negeri 2 Playen</td>
+                </tr>
+                <tr>
+                    <td><strong>Mata Pelajaran</strong></td>
+                    <td>Bahasa Jawa</td>
+                </tr>
+                <tr>
+                    <td><strong>Kelas/Fase</strong></td>
+                    <td>X / Fase E</td>
+                </tr>
+                <tr>
+                    <td><strong>Materi Pokok</strong></td>
+                    <td>Geguritan (Puisi Jawa Modern)</td>
+                </tr>
+                <tr>
+                    <td><strong>Alokasi Waktu</strong></td>
+                    <td>2 JP (2 x 45 menit) - <strong>Total 90 Menit</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Model Pembelajaran</strong></td>
+                    <td>Project-Based Learning (PBL) / Pembelajaran Berbasis Proyek</td>
+                </tr>
+                <tr>
+                    <td><strong>Profil Pelajar Pancasila</strong></td>
+                    <td>Mandiri dan Kreatif</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-bullseye"></i> Tujuan Pembelajaran</h2>
+            <p>Mengacu pada level kognitif Taksonomi Bloom Revisi:</p>
+            
+            <div class="activity-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time"><i class="far fa-clock"></i> Level 1: Memahami</div>
+                    <p>Peserta didik mampu <strong>memahami</strong> ciri-ciri dan unsur intrinsik <em>geguritan</em> modern dengan benar.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-time"><i class="far fa-clock"></i> Level 2: Menerapkan</div>
+                    <p>Peserta didik mampu <strong>menerapkan</strong> <em>purwakanthi</em> dan diksi Jawa yang kaya dalam larik <em>geguritan</em> sederhana.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-time"><i class="far fa-clock"></i> Level 3: Menganalisis</div>
+                    <p>Peserta didik mampu <strong>menganalisis</strong> kesesuaian diksi Jawa dengan tema yang dipilih dalam contoh <em>geguritan</em> modern.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-time"><i class="far fa-clock"></i> Level 4: Mengevaluasi</div>
+                    <p>Peserta didik mampu <strong>mengevaluasi</strong> keefektifan pilihan kata (<em>diksi</em>) pada <em>geguritan</em> yang ditulis oleh teman sebaya.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-time"><i class="far fa-clock"></i> Level 5: Mencipta</div>
+                    <p>Peserta didik mampu <strong>mencipta</strong> satu karya <em>geguritan</em> (puisi Jawa modern) yang orisinal dan kontekstual.</p>
+                </div>
+            </div>
+            
+            <div class="interactive-element">
+                <h4><i class="fas fa-lightbulb"></i> Refleksi Diri</h4>
+                <p>Manakah dari tujuan pembelajaran di atas yang paling menarik untuk Anda capai? Mengapa?</p>
+                <textarea id="reflectionInput" rows="3" placeholder="Tuliskan refleksi Anda di sini..." style="width: 100%;"></textarea>
+                <button onclick="saveReflection()"><i class="fas fa-save"></i> Simpan Refleksi</button>
+                <div id="reflectionOutput" class="hidden-content"></div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-tasks"></i> Kegiatan Pembelajaran</h2>
+            
+            <div class="interactive-element">
+                <h4><i class="fas fa-play-circle"></i> Kegiatan Awal (10 Menit)</h4>
+                <p><strong>Prinsip:</strong> Berkesadaran, Bermakna, Menggembirakan</p>
+                
+                <div class="activity-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-time"><i class="far fa-clock"></i> Orientasi (2')</div>
+                        <p><strong>Teknik mindfulness:</strong> Tarik napas, fokus pada pikiran saat ini.</p>
+                        <button class="toggle-btn" onclick="toggleContent('mindfulness')"><i class="fas fa-expand-alt"></i> Coba Teknik Mindfulness</button>
+                        <div id="mindfulness" class="hidden-content">
+                            <p><strong>Langkah-langkah:</strong></p>
+                            <p>1. Duduk dengan nyaman, tutup mata Anda.</p>
+                            <p>2. Tarik napas dalam-dalam melalui hidung selama 4 detik.</p>
+                            <p>3. Tahan napas selama 4 detik.</p>
+                            <p>4. Buang napas perlahan melalui mulut selama 6 detik.</p>
+                            <p>5. Ulangi 3 kali sambil fokus pada pernapasan Anda.</p>
+                            <p>Setelah selesai, tanyakan pada diri: <em>"Bagaimana perasaan saya saat ini?"</em></p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-time"><i class="far fa-clock"></i> Apersepsi (5')</div>
+                        <p>Menonton video deklamasi <em>geguritan</em> bertema isu remaja yang viral.</p>
+                        <button class="toggle-btn" onclick="toggleContent('videoPrompt')"><i class="fas fa-video"></i> Contoh Pertanyaan Diskusi</button>
+                        <div id="videoPrompt" class="hidden-content">
+                            <p><strong>Pertanyaan diskusi setelah menonton video:</strong></p>
+                            <ul>
+                                <li>Apa masalah yang diangkat dalam puisi ini?</li>
+                                <li>Apakah pilihan kata Jawa-nya berhasil menyentuh perasaan Anda?</li>
+                                <li>Bagaimana puisi ini relevan dengan kehidupan remaja saat ini?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="interactive-element">
+                <h4><i class="fas fa-cogs"></i> Kegiatan Inti (70 Menit)</h4>
+                <p><strong>Model:</strong> Problem-Based Learning (PBL)</p>
+                
+                <div class="geguritan-example">
+                    <h4><i class="fas fa-pen-fancy"></i> Contoh Geguritan Modern</h4>
+                    <p><em>"Angin wengi nggawa kabar kang sepi<br>
+                    Ngenangi ati kang lagi susah<br>
+                    Rembulan nutupi rahasiya<br>
+                    Nanging urip kudu terus mlaku"</em></p>
+                    <p><strong>Tema:</strong> Kesendirian dan harapan</p>
+                    <button class="toggle-btn" onclick="toggleContent('analysis')"><i class="fas fa-search"></i> Analisis Diksi</button>
+                    <div id="analysis" class="hidden-content">
+                        <p><strong>Analisis diksi dalam contoh geguritan:</strong></p>
+                        <ul>
+                            <li><strong>"Angin wengi"</strong>: Menciptakan citraan suasana malam</li>
+                            <li><strong>"kabar kang sepi"</strong>: Personifikasi yang menyampaikan kesunyian</li>
+                            <li><strong>"ngenangi ati"</strong>: Metafora untuk perasaan yang meluap</li>
+                            <li><strong>"rembulan nutupi rahasiya"</strong>: Simbol kerahasiaan dan kedamaian</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <button onclick="showWritingWorkshop()"><i class="fas fa-pencil-alt"></i> Ikuti Mini-Workshop Menulis Geguritan</button>
+                <div id="writingWorkshop" class="hidden-content">
+                    <h4>Mini-Workshop Menulis Geguritan</h4>
+                    <p><strong>Langkah 1:</strong> Pilih satu tema dari pilihan berikut:</p>
+                    <select id="themeSelect" style="margin-bottom: 15px;">
+                        <option value="">-- Pilih Tema --</option>
+                        <option value="lingkungan">Lingkungan dan Alam</option>
+                        <option value="teknologi">Teknologi dan Remaja</option>
+                        <option value="persahabatan">Persahabatan dan Solidaritas</option>
+                        <option value="cita-cita">Cita-cita dan Masa Depan</option>
+                    </select>
+                    
+                    <p><strong>Langkah 2:</strong> Tulis 2-3 baris awal geguritan Anda:</p>
+                    <textarea id="geguritanDraft" rows="4" placeholder="Contoh: Angin sore nyapu dedaunan gugur..." style="margin-bottom: 15px;"></textarea>
+                    
+                    <p><strong>Langkah 3:</strong> Tambahkan minimal satu jenis <em>purwakanthi</em> (persajakan):</p>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 15px;">
+                        <button class="toggle-btn" onclick="toggleContent('purwakanthiInfo')">Purwakanthi Guru</button>
+                        <button class="toggle-btn" onclick="toggleContent('purwakanthiLumaksita')">Purwakanthi Lumaksita</button>
+                        <button class="toggle-btn" onclick="toggleContent('purwakanthiSwara')">Purwakanthi Swara</button>
+                    </div>
+                    
+                    <div id="purwakanthiInfo" class="hidden-content">
+                        <p><strong>Purwakanthi Guru:</strong> Persajakan akhir (rima) pada setiap baris.</p>
+                        <p>Contoh: ...<strong>ati</strong> | ...<strong>susi</strong> | ...<strong>mati</strong></p>
+                    </div>
+                    
+                    <div id="purwakanthiLumaksita" class="hidden-content">
+                        <p><strong>Purwakanthi Lumaksita:</strong> Pengulangan bunyi konsonan yang sama.</p>
+                        <p>Contoh: <strong>K</strong>embang <strong>k</strong>anthil <strong>k</strong>eliling <strong>k</strong>utho</p>
+                    </div>
+                    
+                    <div id="purwakanthiSwara" class="hidden-content">
+                        <p><strong>Purwakanthi Swara:</strong> Pengulangan bunyi vokal yang sama.</p>
+                        <p>Contoh: <strong>a</strong>wan <strong>a</strong>biru <strong>a</strong>doh <strong>a</strong>ding</p>
+                    </div>
+                    
+                    <button onclick="submitGeguritanDraft()"><i class="fas fa-paper-plane"></i> Kirim Draft Geguritan</button>
+                    <div id="draftOutput" class="hidden-content"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-clipboard-check"></i> Asesmen Pembelajaran</h2>
+            
+            <div class="assessment-criteria">
+                <div class="criteria-card">
+                    <h4><i class="fas fa-question-circle"></i> Asesmen Awal (Kognitif)</h4>
+                    <p>Mengetahui pemahaman awal siswa pada konsep puisi, ciri <em>geguritan</em> modern, dan diksi dasar.</p>
+                    <button class="toggle-btn" onclick="toggleContent('soalContoh')">Lihat Contoh Soal</button>
+                    <div id="soalContoh" class="hidden-content">
+                        <p><strong>Soal 1:</strong> Apakah ciri utama <em>geguritan</em> modern yang membedakannya dengan <em>tembang macapat</em>?</p>
+                        <p><strong>Jawaban:</strong> Menggunakan pola persajakan bebas (tidak terikat aturan formal).</p>
+                    </div>
+                </div>
+                
+                <div class="criteria-card">
+                    <h4><i class="fas fa-chart-line"></i> Asesmen Proses (Formatif)</h4>
+                    <p>Lembar observasi diskusi kelompok dan rubrik penilaian partisipasi, kolaborasi, dan penalaran kritis.</p>
+                    <button class="toggle-btn" onclick="toggleContent('rubrikContoh')">Lihat Kriteria</button>
+                    <div id="rubrikContoh" class="hidden-content">
+                        <p><strong>Partisipasi (Mandiri):</strong> Aktif memberikan ide, mampu mencari sumber diksi secara mandiri.</p>
+                        <p><strong>Kolaborasi (Kerja Sama):</strong> Mampu bekerja sama dengan baik dan mendukung ide teman.</p>
+                    </div>
+                </div>
+                
+                <div class="criteria-card">
+                    <h4><i class="fas fa-flag-checkered"></i> Asesmen Akhir (Sumatif)</h4>
+                    <p>Tugas proyek menulis <em>geguritan</em> yang orisinal dan kontekstual dengan rubrik penilaian.</p>
+                    <button class="toggle-btn" onclick="toggleContent('proyekAkhir')">Lihat Tugas Akhir</button>
+                    <div id="proyekAkhir" class="hidden-content">
+                        <p><strong>Tugas Akhir:</strong> Buat satu karya <em>geguritan</em> (4-6 baris) dengan tema bebas.</p>
+                        <p><strong>Kriteria:</strong> Orisinalitas, penggunaan diksi Jawa, penerapan <em>purwakanthi</em>, dan kesesuaian tema.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote">
+                <p>"Penilaian dalam pembelajaran sastra bukan sekadar mengukur hasil, tetapi juga menghargai proses kreatif dan perkembangan kemampuan berbahasa siswa."</p>
+                <div class="quote-author">- Prinsip Penilaian Pembelajaran Sastra</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-laptop-code"></i> Pemanfaatan Teknologi Digital</h2>
+            
+            <div class="activity-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time"><i class="fas fa-book"></i> Kamus Digital Bahasa Jawa</div>
+                    <p>Membantu siswa dalam <strong>mencari <em>tembung</em> Jawa</strong> yang kaya, asing, atau tingkat tutur yang tepat secara cepat dan mandiri.</p>
+                    <button class="toggle-btn" onclick="searchKamus()"><i class="fas fa-search"></i> Coba Cari Kata dalam Kamus</button>
+                    <div id="kamusOutput" class="hidden-content"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-time"><i class="fas fa-paint-brush"></i> Platform Visual (Canva/CapCut)</div>
+                    <p>Memungkinkan siswa <strong>memvisualisasikan <em>geguritan</em></strong> (teks di atas foto, video deklamasi) agar lebih interaktif.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-time"><i class="fas fa-users"></i> Media Kolaborasi Daring</div>
+                    <p>Google Docs/Miro/Jamboard untuk aktivitas <strong>berbagi draf</strong> dan <strong>menerima umpan balik</strong> secara <em>real-time</em>.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="interactive-element">
+            <h4><i class="fas fa-certificate"></i> Selesaikan Modul Ini</h4>
+            <p>Setelah mempelajari seluruh materi, klik tombol di bawah untuk menyelesaikan modul ini:</p>
+            <button onclick="completeModule()"><i class="fas fa-check-circle"></i> Tandai sebagai Selesai</button>
+            <div id="completionMessage" class="hidden-content"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>Modul Interaktif Pembelajaran Geguritan Bahasa Jawa - SMA Negeri 2 Playen</p>
+            <p>Menerapkan Prinsip Berkesadaran, Bermakna, dan Menggembirakan</p>
+            <p><i class="fas fa-code"></i> Dikembangkan sebagai Media Pembelajaran Interaktif</p>
+        </div>
+    </footer>
+
+    <script>
+        // Variabel untuk melacak progress belajar
+        let userProgress = 0;
+        let userReflections = [];
+        let userGeguritanDrafts = [];
+        
+        // Fungsi untuk mengupdate progress bar
+        function updateProgress() {
+            const progressBar = document.getElementById('progressBar');
+            const progressPercent = document.getElementById('progressPercent');
+            
+            // Hitung progress berdasarkan interaksi pengguna
+            if (userProgress < 100) {
+                userProgress += 10;
+                if (userProgress > 100) userProgress = 100;
+                
+                progressBar.style.width = userProgress + '%';
+                progressPercent.textContent = userProgress + '%';
+                
+                // Berikan feedback visual
+                if (userProgress >= 50 && userProgress < 100) {
+                    progressBar.style.background = 'linear-gradient(90deg, #5c4033, #d4af37)';
+                } else if (userProgress === 100) {
+                    progressBar.style.background = 'linear-gradient(90deg, #3c2a1e, #50c878)';
+                    showCompletionBadge();
+                }
+            }
+        }
+        
+        // Fungsi untuk menampilkan informasi prinsip pembelajaran
+        function showPrincipleInfo(principle) {
+            updateProgress();
+            
+            let message = "";
+            let icon = "";
+            
+            switch(principle) {
+                case 'berkesadaran':
+                    message = "Prinsip BERKESADARAN menekankan pada pengembangan kesadaran penuh (mindfulness) dalam proses belajar. Dalam konteks pembelajaran geguritan, ini berarti siswa diajak untuk secara sadar merasakan keindahan bahasa Jawa, memahami makna di balik setiap pilihan kata (diksi), dan merefleksikan proses kreatif mereka.";
+                    icon = "🧠";
+                    break;
+                case 'bermakna':
+                    message = "Prinsip BERMAKNA mengutamakan pembelajaran yang relevan dengan kehidupan siswa. Pembelajaran geguritan menjadi bermakna ketika siswa dapat menghubungkannya dengan pengalaman pribadi, isu sosial yang mereka hadapi, dan menggunakannya sebagai media ekspresi yang autentik.";
+                    icon = "❤️";
+                    break;
+                case 'menggembirakan':
+                    message = "Prinsip MENGGEMBIRAKAN menciptakan suasana belajar yang menyenangkan, menarik, dan memotivasi. Dalam pembelajaran geguritan, ini dicapai melalui berbagai aktivitas kreatif seperti menulis puisi, berdiskusi, dan mempresentasikan karya dengan cara yang menyenangkan.";
+                    icon = "😊";
+                    break;
+            }
+            
+            // Buat modal custom
+            const modal = document.createElement('div');
+            modal.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.7);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 10000;
+                padding: 20px;
+            `;
+            
+            modal.innerHTML = `
+                <div style="background: linear-gradient(145deg, #ffffff, #f5f1e6); 
+                    border-radius: ${getComputedStyle(document.documentElement).getPropertyValue('--border-radius')};
+                    padding: 30px; 
+                    max-width: 500px; 
+                    width: 100%;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+                    border-top: 6px solid var(--accent-gold);
+                    position: relative;">
+                    <button onclick="this.parentElement.parentElement.remove()" 
+                        style="position: absolute; top: 15px; right: 15px; background: none; border: none; font-size: 1.5rem; color: var(--primary-brown); cursor: pointer;">×</button>
+                    <div style="font-size: 3rem; text-align: center; margin-bottom: 15px;">${icon}</div>
+                    <h3 style="color: var(--primary-dark); text-align: center; margin-bottom: 15px;">${principle.charAt(0).toUpperCase() + principle.slice(1)}</h3>
+                    <p style="line-height: 1.6;">${message}</p>
+                    <button onclick="this.parentElement.parentElement.remove()" 
+                        style="margin-top: 20px; width: 100%;">Tutup</button>
+                </div>
+            `;
+            
+            document.body.appendChild(modal);
+        }
+        
+        // Fungsi untuk menampilkan/menyembunyikan konten
+        function toggleContent(contentId) {
+            const content = document.getElementById(contentId);
+            
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+                updateProgress();
+            }
+        }
+        
+        // Fungsi untuk menyimpan refleksi pengguna
+        function saveReflection() {
+            const reflectionInput = document.getElementById('reflectionInput');
+            const reflectionOutput = document.getElementById('reflectionOutput');
+            
+            if (reflectionInput.value.trim() === "") {
+                alert("Silakan tulis refleksi Anda terlebih dahulu!");
+                return;
+            }
+            
+            userReflections.push(reflectionInput.value);
+            
+            reflectionOutput.innerHTML = `
+                <h5><i class="fas fa-comment"></i> Refleksi Tersimpan:</h5>
+                <p>"${reflectionInput.value}"</p>
+                <p><small><i class="fas fa-history"></i> Disimpan pada: ${new Date().toLocaleString()}</small></p>
+            `;
+            reflectionOutput.style.display = "block";
+            
+            reflectionInput.value = "";
+            updateProgress();
+            
+            // Berikan feedback positif
+            showToast("Refleksi Anda telah disimpan! Lanjutkan dengan bagian berikutnya.", "success");
+        }
+        
+        // Fungsi untuk menampilkan workshop menulis
+        function showWritingWorkshop() {
+            const workshop = document.getElementById('writingWorkshop');
+            
+            if (workshop.style.display === "block") {
+                workshop.style.display = "none";
+            } else {
+                workshop.style.display = "block";
+                updateProgress();
+            }
+        }
+        
+        // Fungsi untuk mengirim draft geguritan
+        function submitGeguritanDraft() {
+            const themeSelect = document.getElementById('themeSelect');
+            const geguritanDraft = document.getElementById('geguritanDraft');
+            const draftOutput = document.getElementById('draftOutput');
+            
+            if (themeSelect.value === "" || geguritanDraft.value.trim() === "") {
+                alert("Silakan pilih tema dan tulis draft geguritan Anda terlebih dahulu!");
+                return;
+            }
+            
+            const draft = {
+                theme: themeSelect.options[themeSelect.selectedIndex].text,
+                content: geguritanDraft.value,
+                date: new Date().toLocaleString()
+            };
+            
+            userGeguritanDrafts.push(draft);
+            
+            draftOutput.innerHTML = `
+                <h5><i class="fas fa-check-circle" style="color:green"></i> Draft Geguritan Tersimpan!</h5>
+                <p><strong>Tema:</strong> ${draft.theme}</p>
+                <p><strong>Isi:</strong> ${draft.content}</p>
+                <p><strong>Komentar:</strong> Draft awal yang baik! Coba tambahkan 1-2 baris lagi dan perkuat penggunaan purwakanthi.</p>
+                <p><small><i class="fas fa-history"></i> Disimpan pada: ${draft.date}</small></p>
+            `;
+            draftOutput.style.display = "block";
+            
+            themeSelect.value = "";
+            geguritanDraft.value = "";
+            updateProgress();
+            
+            // Berikan feedback kreatif
+            showToast("Kreatif! Draft geguritan Anda telah disimpan. Lanjutkan pengembangan karya Anda!", "success");
+        }
+        
+        // Fungsi untuk simulasi kamus digital
+        function searchKamus() {
+            const kamusOutput = document.getElementById('kamusOutput');
+            const words = [
+                { jawa: "rembulan", indonesia: "bulan", krama: "sasangka" },
+                { jawa: "angin", indonesia: "angin", krama: "bayu" },
+                { jawa: "ati", indonesia: "hati", krama: "manah" },
+                { jawa: "susaha", indonesia: "susah", krama: "susah" },
+                { jawa: "sepi", indonesia: "sepi", krama: "sepi" },
+                { jawa: "wengi", indonesia: "malam", krama: "dalu" },
+                { jawa: "kabar", indonesia: "kabar", krama: "warta" },
+                { jawa: "rahasia", indonesia: "rahasia", krama: "rasaning ati" }
+            ];
+            
+            let randomWord = words[Math.floor(Math.random() * words.length)];
+            
+            kamusOutput.innerHTML = `
+                <h5><i class="fas fa-book-open"></i> Hasil Pencarian Kamus:</h5>
+                <table>
+                    <tr>
+                        <th>Kata (Ngoko)</th>
+                        <th>Arti (Indonesia)</th>
+                        <th>Kata (Krama)</th>
+                    </tr>
+                    <tr>
+                        <td><strong>${randomWord.jawa}</strong></td>
+                        <td>${randomWord.indonesia}</td>
+                        <td>${randomWord.krama}</td>
+                    </tr>
+                </table>
+                <p><small>Gunakan kata-kata ini untuk memperkaya diksi dalam geguritan Anda!</small></p>
+            `;
+            kamusOutput.style.display = "block";
+            updateProgress();
+        }
+        
+        // Fungsi untuk menyelesaikan modul
+        function completeModule() {
+            const completionMessage = document.getElementById('completionMessage');
+            
+            // Update progress menjadi 100%
+            userProgress = 100;
+            updateProgress();
+            
+            completionMessage.innerHTML = `
+                <div style="text-align: center; padding: 20px;">
+                    <h3 style="color: var(--primary-dark);"><i class="fas fa-trophy"></i> SELAMAT!</h3>
+                    <p>Anda telah menyelesaikan modul pembelajaran "Geguritan Bahasa Jawa".</p>
+                    <p><strong>Ringkasan Aktivitas Anda:</strong></p>
+                    <ul style="text-align: left; margin: 15px 0; padding-left: 20px;">
+                        <li>Refleksi disimpan: <strong>${userReflections.length}</strong></li>
+                        <li>Draft geguritan dibuat: <strong>${userGeguritanDrafts.length}</strong></li>
+                        <li>Progress belajar: <strong>${userProgress}%</strong></li>
+                    </ul>
+                    <p>Teruslah berlatih menulis geguritan untuk mengasah kreativitas dan kecintaan terhadap bahasa Jawa!</p>
+                    <button onclick="location.reload()" style="margin-top: 15px; width: 100%;"><i class="fas fa-redo"></i> Ulangi Modul</button>
+                </div>
+            `;
+            completionMessage.style.display = "block";
+            
+            // Scroll ke pesan penyelesaian
+            completionMessage.scrollIntoView({ behavior: 'smooth' });
+            
+            // Tampilkan konfetti
+            showConfetti();
+        }
+        
+        // Fungsi untuk menampilkan badge penyelesaian
+        function showCompletionBadge() {
+            // Membuat elemen badge
+            const badge = document.createElement('div');
+            badge.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: linear-gradient(145deg, var(--primary-brown), var(--primary-dark));
+                color: var(--accent-gold);
+                padding: 12px 20px;
+                border-radius: 30px;
+                box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+                z-index: 1000;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                animation: fadeIn 0.5s;
+                border: 2px solid var(--accent-gold);
+                font-weight: bold;
+            `;
+            
+            badge.innerHTML = `
+                <i class="fas fa-award"></i>
+                <span>Modul Selesai 100%!</span>
+            `;
+            
+            document.body.appendChild(badge);
+            
+            // Hapus badge setelah 5 detik
+            setTimeout(() => {
+                badge.style.opacity = '0';
+                badge.style.transition = 'opacity 0.5s';
+                setTimeout(() => {
+                    if (badge.parentNode) {
+                        badge.parentNode.removeChild(badge);
+                    }
+                }, 500);
+            }, 5000);
+        }
+        
+        // Fungsi untuk menampilkan toast notification
+        function showToast(message, type) {
+            const toast = document.createElement('div');
+            toast.style.cssText = `
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+                background: ${type === 'success' ? 'linear-gradient(145deg, #3c2a1e, #2c1810)' : '#d9534f'};
+                color: white;
+                padding: 15px 25px;
+                border-radius: ${getComputedStyle(document.documentElement).getPropertyValue('--border-radius')};
+                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+                z-index: 1000;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                animation: slideIn 0.3s;
+                border-left: 4px solid var(--accent-gold);
+            `;
+            
+            toast.innerHTML = `
+                <i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-triangle'}"></i>
+                <span>${message}</span>
+            `;
+            
+            document.body.appendChild(toast);
+            
+            // Hapus toast setelah 3 detik
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                toast.style.transition = 'opacity 0.5s';
+                setTimeout(() => {
+                    if (toast.parentNode) {
+                        toast.parentNode.removeChild(toast);
+                    }
+                }, 500);
+            }, 3000);
+        }
+        
+        // Fungsi untuk efek konfetti
+        function showConfetti() {
+            const colors = ['#d4af37', '#5c4033', '#3c2a1e', '#ffd700'];
+            
+            for (let i = 0; i < 100; i++) {
+                const confetti = document.createElement('div');
+                confetti.style.cssText = `
+                    position: fixed;
+                    width: 10px;
+                    height: 10px;
+                    background-color: ${colors[Math.floor(Math.random() * colors.length)]};
+                    border-radius: 50%;
+                    top: -20px;
+                    left: ${Math.random() * 100}vw;
+                    z-index: 9999;
+                    animation: fall ${Math.random() * 3 + 2}s linear forwards;
+                `;
+                
+                document.body.appendChild(confetti);
+                
+                // Hapus confetti setelah animasi selesai
+                setTimeout(() => {
+                    if (confetti.parentNode) {
+                        confetti.parentNode.removeChild(confetti);
+                    }
+                }, 5000);
+            }
+            
+            // Tambahkan style untuk animasi confetti
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes fall {
+                    to {
+                        transform: translateY(100vh) rotate(${Math.random() * 360}deg);
+                        opacity: 0;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+        }
+        
+        // Inisialisasi progress saat halaman dimuat
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set progress awal
+            updateProgress();
+            
+            // Tambahkan event listener untuk semua tombol
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(button => {
+                button.addEventListener('click', updateProgress);
+            });
+            
+            // Tambahkan event listener untuk semua elemen yang bisa diklik
+            const clickableElements = document.querySelectorAll('.principle-card, .toggle-btn');
+            clickableElements.forEach(element => {
+                element.addEventListener('click', updateProgress);
+            });
+        });
+    </script>
+</body>
+</html>
+    
+    <script>
+        console.log('Media Pembelajaran Interaktif');
+    </script>
+</body>
+</html>
